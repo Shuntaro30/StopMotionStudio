@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		2180D3A82484A0FA0046E8A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2180D3A72484A0FA0046E8A7 /* AppDelegate.swift */; };
 		2180D3AA2484A0FA0046E8A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2180D3A92484A0FA0046E8A7 /* SceneDelegate.swift */; };
-		2180D3AC2484A0FA0046E8A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2180D3AB2484A0FA0046E8A7 /* ViewController.swift */; };
+		2180D3AC2484A0FA0046E8A7 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2180D3AB2484A0FA0046E8A7 /* EditViewController.swift */; };
 		2180D3AF2484A0FA0046E8A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2180D3AD2484A0FA0046E8A7 /* Main.storyboard */; };
 		2180D3B12484A0FC0046E8A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2180D3B02484A0FC0046E8A7 /* Assets.xcassets */; };
 		2180D3B42484A0FC0046E8A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2180D3B22484A0FC0046E8A7 /* LaunchScreen.storyboard */; };
 		2180D3BF2484A0FC0046E8A7 /* StopMotionStudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2180D3BE2484A0FC0046E8A7 /* StopMotionStudioTests.swift */; };
-		2180D3CA2484A0FC0046E8A7 /* StopMotionStudioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2180D3C92484A0FC0046E8A7 /* StopMotionStudioUITests.swift */; };
+		2180D3D82484A43E0046E8A7 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2180D3D72484A43E0046E8A7 /* ProjectsViewController.swift */; };
+		21BF12D52486251D00E2A8A7 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BF12D42486251D00E2A8A7 /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,30 +26,23 @@
 			remoteGlobalIDString = 2180D3A32484A0FA0046E8A7;
 			remoteInfo = StopMotionStudio;
 		};
-		2180D3C62484A0FC0046E8A7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2180D39C2484A0FA0046E8A7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2180D3A32484A0FA0046E8A7;
-			remoteInfo = StopMotionStudio;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2180D3A42484A0FA0046E8A7 /* StopMotionStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopMotionStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2180D3A42484A0FA0046E8A7 /* コマ撮り.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "コマ撮り.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2180D3A72484A0FA0046E8A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2180D3A92484A0FA0046E8A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2180D3AB2484A0FA0046E8A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2180D3AE2484A0FA0046E8A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2180D3AB2484A0FA0046E8A7 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		2180D3B02484A0FC0046E8A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2180D3B32484A0FC0046E8A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2180D3B52484A0FC0046E8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2180D3BA2484A0FC0046E8A7 /* StopMotionStudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopMotionStudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2180D3BE2484A0FC0046E8A7 /* StopMotionStudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopMotionStudioTests.swift; sourceTree = "<group>"; };
 		2180D3C02484A0FC0046E8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2180D3C52484A0FC0046E8A7 /* StopMotionStudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopMotionStudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2180D3C92484A0FC0046E8A7 /* StopMotionStudioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopMotionStudioUITests.swift; sourceTree = "<group>"; };
-		2180D3CB2484A0FC0046E8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2180D3D72484A43E0046E8A7 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		21BF12D124860F8E00E2A8A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21BF12D324861E1000E2A8A7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21BF12D42486251D00E2A8A7 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +60,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2180D3C22484A0FC0046E8A7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +68,6 @@
 			children = (
 				2180D3A62484A0FA0046E8A7 /* StopMotionStudio */,
 				2180D3BD2484A0FC0046E8A7 /* StopMotionStudioTests */,
-				2180D3C82484A0FC0046E8A7 /* StopMotionStudioUITests */,
 				2180D3A52484A0FA0046E8A7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,9 +75,8 @@
 		2180D3A52484A0FA0046E8A7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2180D3A42484A0FA0046E8A7 /* StopMotionStudio.app */,
+				2180D3A42484A0FA0046E8A7 /* コマ撮り.app */,
 				2180D3BA2484A0FC0046E8A7 /* StopMotionStudioTests.xctest */,
-				2180D3C52484A0FC0046E8A7 /* StopMotionStudioUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,7 +86,9 @@
 			children = (
 				2180D3A72484A0FA0046E8A7 /* AppDelegate.swift */,
 				2180D3A92484A0FA0046E8A7 /* SceneDelegate.swift */,
-				2180D3AB2484A0FA0046E8A7 /* ViewController.swift */,
+				2180D3AB2484A0FA0046E8A7 /* EditViewController.swift */,
+				2180D3D72484A43E0046E8A7 /* ProjectsViewController.swift */,
+				21BF12D42486251D00E2A8A7 /* Cell.swift */,
 				2180D3AD2484A0FA0046E8A7 /* Main.storyboard */,
 				2180D3B02484A0FC0046E8A7 /* Assets.xcassets */,
 				2180D3B22484A0FC0046E8A7 /* LaunchScreen.storyboard */,
@@ -117,15 +104,6 @@
 				2180D3C02484A0FC0046E8A7 /* Info.plist */,
 			);
 			path = StopMotionStudioTests;
-			sourceTree = "<group>";
-		};
-		2180D3C82484A0FC0046E8A7 /* StopMotionStudioUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2180D3C92484A0FC0046E8A7 /* StopMotionStudioUITests.swift */,
-				2180D3CB2484A0FC0046E8A7 /* Info.plist */,
-			);
-			path = StopMotionStudioUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +123,7 @@
 			);
 			name = StopMotionStudio;
 			productName = StopMotionStudio;
-			productReference = 2180D3A42484A0FA0046E8A7 /* StopMotionStudio.app */;
+			productReference = 2180D3A42484A0FA0046E8A7 /* コマ撮り.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2180D3B92484A0FC0046E8A7 /* StopMotionStudioTests */ = {
@@ -166,24 +144,6 @@
 			productReference = 2180D3BA2484A0FC0046E8A7 /* StopMotionStudioTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2180D3C42484A0FC0046E8A7 /* StopMotionStudioUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2180D3D42484A0FC0046E8A7 /* Build configuration list for PBXNativeTarget "StopMotionStudioUITests" */;
-			buildPhases = (
-				2180D3C12484A0FC0046E8A7 /* Sources */,
-				2180D3C22484A0FC0046E8A7 /* Frameworks */,
-				2180D3C32484A0FC0046E8A7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2180D3C72484A0FC0046E8A7 /* PBXTargetDependency */,
-			);
-			name = StopMotionStudioUITests;
-			productName = StopMotionStudioUITests;
-			productReference = 2180D3C52484A0FC0046E8A7 /* StopMotionStudioUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,10 +161,6 @@
 						CreatedOnToolsVersion = 11.4;
 						TestTargetID = 2180D3A32484A0FA0046E8A7;
 					};
-					2180D3C42484A0FC0046E8A7 = {
-						CreatedOnToolsVersion = 11.4;
-						TestTargetID = 2180D3A32484A0FA0046E8A7;
-					};
 				};
 			};
 			buildConfigurationList = 2180D39F2484A0FA0046E8A7 /* Build configuration list for PBXProject "StopMotionStudio" */;
@@ -214,6 +170,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 2180D39B2484A0FA0046E8A7;
 			productRefGroup = 2180D3A52484A0FA0046E8A7 /* Products */;
@@ -222,7 +179,6 @@
 			targets = (
 				2180D3A32484A0FA0046E8A7 /* StopMotionStudio */,
 				2180D3B92484A0FC0046E8A7 /* StopMotionStudioTests */,
-				2180D3C42484A0FC0046E8A7 /* StopMotionStudioUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,13 +201,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2180D3C32484A0FC0046E8A7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -259,7 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2180D3AC2484A0FA0046E8A7 /* ViewController.swift in Sources */,
+				21BF12D52486251D00E2A8A7 /* Cell.swift in Sources */,
+				2180D3D82484A43E0046E8A7 /* ProjectsViewController.swift in Sources */,
+				2180D3AC2484A0FA0046E8A7 /* EditViewController.swift in Sources */,
 				2180D3A82484A0FA0046E8A7 /* AppDelegate.swift in Sources */,
 				2180D3AA2484A0FA0046E8A7 /* SceneDelegate.swift in Sources */,
 			);
@@ -273,14 +224,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2180D3C12484A0FC0046E8A7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2180D3CA2484A0FC0046E8A7 /* StopMotionStudioUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,18 +232,14 @@
 			target = 2180D3A32484A0FA0046E8A7 /* StopMotionStudio */;
 			targetProxy = 2180D3BB2484A0FC0046E8A7 /* PBXContainerItemProxy */;
 		};
-		2180D3C72484A0FC0046E8A7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2180D3A32484A0FA0046E8A7 /* StopMotionStudio */;
-			targetProxy = 2180D3C62484A0FC0046E8A7 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2180D3AD2484A0FA0046E8A7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2180D3AE2484A0FA0046E8A7 /* Base */,
+				21BF12D124860F8E00E2A8A7 /* Base */,
+				21BF12D324861E1000E2A8A7 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -320,6 +259,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -380,6 +320,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -442,9 +383,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shuntar.StopMotionStudio;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "コマ撮り";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -460,9 +401,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shuntar.StopMotionStudio;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "コマ撮り";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -510,46 +451,6 @@
 			};
 			name = Release;
 		};
-		2180D3D52484A0FC0046E8A7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FW8567YA4Q;
-				INFOPLIST_FILE = StopMotionStudioUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = shuntar.StopMotionStudioUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = StopMotionStudio;
-			};
-			name = Debug;
-		};
-		2180D3D62484A0FC0046E8A7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FW8567YA4Q;
-				INFOPLIST_FILE = StopMotionStudioUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = shuntar.StopMotionStudioUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = StopMotionStudio;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -576,15 +477,6 @@
 			buildConfigurations = (
 				2180D3D22484A0FC0046E8A7 /* Debug */,
 				2180D3D32484A0FC0046E8A7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2180D3D42484A0FC0046E8A7 /* Build configuration list for PBXNativeTarget "StopMotionStudioUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2180D3D52484A0FC0046E8A7 /* Debug */,
-				2180D3D62484A0FC0046E8A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

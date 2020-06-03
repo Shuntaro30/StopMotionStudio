@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  StopMotionStudio
+
+  Created by Shuntaro Kasatani on 6/1/20.
+  Copyright © 2020 Shuntaro Kasatani. All rights reserved.
+*/
+
+"edit" = "Edit";
+"done" = "Done";
+"create" = "Create";
+"creStop" = "New Stop-Motion:";
+"notCreate" = "Couldn't create Stop-Motion.";
+"cancel" = "Cancel";

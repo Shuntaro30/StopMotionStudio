@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  StopMotionStudio
+
+  Created by Shuntaro Kasatani on 6/1/20.
+  Copyright © 2020 Shuntaro Kasatani. All rights reserved.
+*/
+
+"edit" = "編集";
+"done" = "完了";
+"create" = "作成";
+"creStop" = "新規コマ撮り";
+"notCreate" = "コマ撮りを作成できませんでした。";
+"kya" = "";

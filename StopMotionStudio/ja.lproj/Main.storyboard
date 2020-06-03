@@ -47,7 +47,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5u-br-uNv">
-                                            <rect key="frame" x="8" y="210" width="234" height="40"/>
+                                            <rect key="frame" x="8" y="208" width="234" height="42"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                             <nil key="textColor"/>
@@ -67,7 +67,6 @@
                             <outlet property="delegate" destination="iK4-dm-8dy" id="f0K-20-GdJ"/>
                         </connections>
                     </collectionView>
-                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="PdA-St-X4W">
                         <barButtonItem key="leftBarButtonItem" title="編集" id="pFg-j0-VCZ">
                             <connections>
@@ -80,9 +79,8 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="push" identifier="openProject" id="iff-Pt-DbP"/>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="openProject" id="AZ9-se-9Ta"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4FI-rh-ylI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -155,7 +153,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="XbW-63-B1b"/>
+                    <navigationItem key="navigationItem" id="Ne2-lO-LqH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
