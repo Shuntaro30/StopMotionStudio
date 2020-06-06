@@ -38,6 +38,24 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <view key="backgroundView" contentMode="scaleToFill" id="Mw1-9f-m2E">
+                            <rect key="frame" x="0.0" y="-50" width="1024" height="768"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="pi9-ad-gPm">
+                                    <rect key="frame" x="502" y="376" width="20" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                </activityIndicatorView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="削除しています..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeU-q0-B4a">
+                                    <rect key="frame" x="339" y="345" width="346" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Project" id="JjA-e1-9qV" customClass="CustomCell" customModule="コマ撮り" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
@@ -47,7 +65,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5u-br-uNv">
-                                            <rect key="frame" x="8" y="210" width="234" height="40"/>
+                                            <rect key="frame" x="8" y="208" width="234" height="40"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                             <nil key="textColor"/>
@@ -60,6 +78,10 @@
                                     </subviews>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="250" height="250"/>
+                                <connections>
+                                    <outlet property="imageView" destination="TsW-N9-UAP" id="4wC-4P-oqE"/>
+                                    <outlet property="textLabel" destination="B5u-br-uNv" id="due-VA-zZT"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -69,20 +91,25 @@
                     </collectionView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="PdA-St-X4W">
-                        <barButtonItem key="leftBarButtonItem" title="編集" id="pFg-j0-VCZ">
-                            <connections>
-                                <action selector="edit" destination="iK4-dm-8dy" id="xv4-gf-gU0"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="F56-q0-yWj">
-                            <connections>
-                                <action selector="insertNewObjects" destination="iK4-dm-8dy" id="8wK-ZD-3Oj"/>
-                            </connections>
-                        </barButtonItem>
+                        <leftBarButtonItems>
+                            <barButtonItem title="編集" id="pFg-j0-VCZ">
+                                <connections>
+                                    <action selector="edit" destination="iK4-dm-8dy" id="xv4-gf-gU0"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="trash" id="lEi-Dj-TCH">
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="removeItems:" destination="iK4-dm-8dy" id="xeK-Vz-3Cy"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="push" identifier="openProject" id="iff-Pt-DbP"/>
+                        <outlet property="remove" destination="Mw1-9f-m2E" id="svn-hH-GLn"/>
+                        <outlet property="removeButton" destination="lEi-Dj-TCH" id="0Ui-1m-qKn"/>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="showEditor" id="iff-Pt-DbP"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4FI-rh-ylI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -92,13 +119,13 @@
         <!--Edit View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="EditViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="EditViewController" customModule="コマ撮り" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Lw6-Hp-Lmp">
-                                <rect key="frame" x="62" y="522" width="962" height="119"/>
+                                <rect key="frame" x="62" y="552" width="962" height="119"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dRD-i7-dxl">
@@ -120,37 +147,46 @@
                                 </cells>
                             </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Vm-lp-Fuh">
-                                <rect key="frame" x="62" y="649" width="962" height="119"/>
+                                <rect key="frame" x="62" y="691" width="962" height="77"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bW1-Bi-JoM">
-                                    <size key="itemSize" width="140" height="117"/>
+                                    <size key="itemSize" width="140" height="73"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="017-53-wPD">
-                                        <rect key="frame" x="0.0" y="1" width="140" height="117"/>
+                                        <rect key="frame" x="0.0" y="2" width="140" height="73"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tfi-qI-bqe">
-                                            <rect key="frame" x="0.0" y="0.0" width="140" height="117"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="140" height="73"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="140" height="117"/>
+                                        <size key="customSize" width="140" height="73"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gNE-LP-TnA">
-                                <rect key="frame" x="14" y="523" width="33" height="117"/>
+                                <rect key="frame" x="14" y="552" width="33" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="music.note" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kgA-Mk-yWc">
-                                <rect key="frame" x="14" y="650" width="33" height="117"/>
+                                <rect key="frame" x="14" y="692" width="33" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZb-XO-dzQ">
+                                <rect key="frame" x="939" y="261" width="71" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="camera.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="pushCameraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0SS-Nt-pXK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -163,8 +199,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera.circle" catalog="system" width="128" height="121"/>
         <image name="music.note" catalog="system" width="97" height="128"/>
         <image name="photo" catalog="system" width="128" height="93"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
     </resources>
 </document>

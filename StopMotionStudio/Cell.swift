@@ -8,7 +8,22 @@
 
 import UIKit
 
+class ProjectItem: NSObject {
+    var string: String?
+    var image: UIImage?
+    init(image: UIImage?, forName string: String) {
+        self.string = string
+        if let image = image {
+            self.image = image
+        }
+    }
+}
+
 class CustomCell: UICollectionViewCell {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var textLabel: UILabel!
+    
     // チェックマーク画像の Asset を用意すること
     let checkmarkImage: UIImage = UIImage(named: "CheckMark")!
     var checkmarkView: UIImageView!

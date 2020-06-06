@@ -1,0 +1,12 @@
+
+/* Class = "UIBarButtonItem"; title = "名称変更"; ObjectID = "A0G-ek-Uch"; */
+"A0G-ek-Uch.title" = "名称変更";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "B5u-br-uNv"; */
+"B5u-br-uNv.text" = "Label";
+
+/* Class = "UILabel"; text = "削除しています..."; ObjectID = "IxF-CW-6um"; */
+"IxF-CW-6um.text" = "削除しています...";
+
+/* Class = "UIBarButtonItem"; title = "編集"; ObjectID = "pFg-j0-VCZ"; */
+"pFg-j0-VCZ.title" = "編集";
