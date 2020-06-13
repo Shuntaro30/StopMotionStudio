@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cjt-3Y-FWH">
-    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -24,14 +24,14 @@
             </objects>
             <point key="canvasLocation" x="-1308" y="123"/>
         </scene>
-        <!--プロジェクト-->
+        <!--Projects View Controller-->
         <scene sceneID="9SN-9G-zC0">
             <objects>
                 <collectionViewController id="iK4-dm-8dy" customClass="ProjectsViewController" customModule="コマ撮り" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="7hl-dm-Qfl">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c8Z-lL-HmS">
                             <size key="itemSize" width="250" height="250"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -77,7 +77,6 @@
                                         </imageView>
                                     </subviews>
                                 </collectionViewCellContentView>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="customSize" width="250" height="250"/>
                                 <connections>
                                     <outlet property="imageView" destination="TsW-N9-UAP" id="4wC-4P-oqE"/>
@@ -91,7 +90,7 @@
                         </connections>
                     </collectionView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="プロジェクト" id="PdA-St-X4W">
+                    <navigationItem key="navigationItem" id="PdA-St-X4W">
                         <leftBarButtonItems>
                             <barButtonItem title="編集" id="pFg-j0-VCZ">
                                 <connections>
@@ -125,317 +124,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZb-XO-dzQ">
-                                <rect key="frame" x="939" y="308" width="71" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="camera.circle" catalog="system"/>
-                                <connections>
-                                    <action selector="pushCameraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0SS-Nt-pXK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nS9-Fb-ZP5">
-                                <rect key="frame" x="957" y="266" width="36" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="photo.on.rectangle" catalog="system"/>
-                                <connections>
-                                    <action selector="pickUpPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L9v-P4-qy4"/>
-                                </connections>
-                            </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Lw6-Hp-Lmp" customClass="CCView" customModule="コマ撮り" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="1024" height="495"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Lw6-Hp-Lmp">
+                                <rect key="frame" x="62" y="552" width="962" height="119"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dRD-i7-dxl">
-                                    <size key="itemSize" width="1024" height="548"/>
+                                    <size key="itemSize" width="140" height="117"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="ImagesCell" id="Iaf-le-KiA" customClass="CCCell" customModule="コマ撮り" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="-26.5" width="1024" height="548"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="d5p-Qg-j9b">
-                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="548"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="vs2-GZ-Wue">
+                                        <rect key="frame" x="0.0" y="1" width="140" height="117"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vga-7t-yBb">
+                                            <rect key="frame" x="0.0" y="0.0" width="140" height="117"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l6A-hN-vMi">
-                                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="548"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                </imageView>
-                                            </subviews>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="1024" height="548"/>
+                                        <size key="customSize" width="140" height="117"/>
                                     </collectionViewCell>
                                 </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="HHG-Fh-aRT"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="b1D-kg-2Vh"/>
-                                </connections>
                             </collectionView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3nZ-aQ-hgC">
-                                <rect key="frame" x="0.0" y="599" width="1024" height="169"/>
-                                <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5a3-Og-lUq">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="169"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ji4-Xk-ZHT">
-                                            <size key="itemSize" width="128" height="128"/>
-                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        </collectionViewFlowLayout>
-                                        <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EditCell" id="WvH-oP-cCR">
-                                                <rect key="frame" x="0.0" y="20.5" width="128" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Tgr-SD-3XK">
-                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="43U-du-qq3">
-                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                        </imageView>
-                                                    </subviews>
-                                                </collectionViewCellContentView>
-                                            </collectionViewCell>
-                                        </cells>
-                                        <connections>
-                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="lUg-CV-AhH"/>
-                                            <outlet property="delegate" destination="BYZ-38-t0r" id="IMa-cq-7u7"/>
-                                            <outlet property="dragDelegate" destination="BYZ-38-t0r" id="WPb-sF-12w"/>
-                                            <outlet property="dropDelegate" destination="BYZ-38-t0r" id="e3J-rN-LJx"/>
-                                        </connections>
-                                    </collectionView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="169" id="DZ6-Jz-5C1"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="ItS-Z1-Oft"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="IPq-00-91X"/>
-                            </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66c-zx-ZsP">
-                                <rect key="frame" x="497" y="555" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="gear" catalog="system"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Vm-lp-Fuh">
+                                <rect key="frame" x="62" y="691" width="962" height="77"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bW1-Bi-JoM">
+                                    <size key="itemSize" width="140" height="73"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="017-53-wPD">
+                                        <rect key="frame" x="0.0" y="2" width="140" height="73"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tfi-qI-bqe">
+                                            <rect key="frame" x="0.0" y="0.0" width="140" height="73"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="140" height="73"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gNE-LP-TnA">
+                                <rect key="frame" x="14" y="552" width="33" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="music.note" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kgA-Mk-yWc">
+                                <rect key="frame" x="14" y="692" width="33" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZb-XO-dzQ">
+                                <rect key="frame" x="939" y="261" width="71" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="camera.circle" catalog="system"/>
                                 <connections>
-                                    <action selector="showSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfv-Yd-fi0"/>
+                                    <action selector="pushCameraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0SS-Nt-pXK"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Lw6-Hp-Lmp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cxp-cq-Egx"/>
-                            <constraint firstItem="Lw6-Hp-Lmp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Jaf-nE-0iY"/>
-                            <constraint firstItem="Lw6-Hp-Lmp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Rl6-yL-5aQ"/>
-                            <constraint firstItem="3nZ-aQ-hgC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eDY-ze-VKn"/>
-                            <constraint firstItem="3nZ-aQ-hgC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="m99-jB-Tk7"/>
-                            <constraint firstItem="3nZ-aQ-hgC" firstAttribute="top" secondItem="Lw6-Hp-Lmp" secondAttribute="bottom" constant="54" id="r5Y-O8-kCq"/>
-                            <constraint firstAttribute="bottom" secondItem="3nZ-aQ-hgC" secondAttribute="bottom" id="r9c-3y-EZA"/>
-                        </constraints>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="XbW-63-B1b">
-                        <nil key="title"/>
-                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8Oh-ib-6yO">
-                            <rect key="frame" x="504.5" y="14" width="15" height="22"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" image="play.fill" catalog="system"/>
-                            <connections>
-                                <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dvr-ZJ-Z1t"/>
-                            </connections>
-                        </button>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="usr-7E-TAB">
-                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="fzL-5t-JgV">
-                                <rect key="frame" x="777" y="8.5" width="227" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="カメラ"/>
-                                    <segment title="編集"/>
-                                </segments>
-                                <connections>
-                                    <action selector="chengeEditor:" destination="BYZ-38-t0r" eventType="valueChanged" id="IqW-UR-zSJ"/>
-                                </connections>
-                            </segmentedControl>
-                        </barButtonItem>
-                    </navigationItem>
-                    <keyCommands>
-                        <keyCommand input=" " actionName="play2" discoverabilityTitle="再生"/>
-                    </keyCommands>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="editableView" destination="5a3-Og-lUq" id="cy5-Th-ysU"/>
-                        <outlet property="firstSecond" destination="fzL-5t-JgV" id="Vyo-cR-DG8"/>
-                        <outlet property="imagesView" destination="Lw6-Hp-Lmp" id="WVS-9G-KVd"/>
-                        <outlet property="playButton" destination="8Oh-ib-6yO" id="MVK-fp-L0o"/>
-                        <outlet property="scrollView" destination="3nZ-aQ-hgC" id="NYE-ra-uSV"/>
-                        <segue destination="sb2-4x-99H" kind="popoverPresentation" identifier="showSet" popoverAnchorView="66c-zx-ZsP" id="7Nz-Np-bGy">
-                            <popoverArrowDirection key="popoverArrowDirection" up="YES"/>
-                        </segue>
-                        <segue destination="Klh-96-B8y" kind="presentation" identifier="addTitle" id="5Ut-CA-YUd"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="XbW-63-B1b"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.28125" y="121.875"/>
-        </scene>
-        <!--Add Title Controller-->
-        <scene sceneID="eY6-p0-69f">
-            <objects>
-                <viewController id="Klh-96-B8y" customClass="AddTitleController" customModule="コマ撮り" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pzS-wx-ncs">
-                        <rect key="frame" x="0.0" y="0.0" width="712" height="728"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CNl-Xb-uHG">
-                                <rect key="frame" x="0.0" y="57" width="712" height="671"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4GT-a2-PXd">
-                                <rect key="frame" x="0.0" y="0.0" width="712" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="6JY-0F-9uC"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="タイトルを追加" id="y8k-Fp-3ez">
-                                        <barButtonItem key="leftBarButtonItem" title="キャンセル" id="UxE-Fx-L9v">
-                                            <connections>
-                                                <action selector="dismissSelf:" destination="Klh-96-B8y" id="jQY-Be-Pi4"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <rightBarButtonItems>
-                                            <barButtonItem title="追加" style="done" id="RvL-PG-D81">
-                                                <connections>
-                                                    <action selector="add:" destination="Klh-96-B8y" id="UgK-9J-fWA"/>
-                                                </connections>
-                                            </barButtonItem>
-                                            <barButtonItem title="色を選択" id="2NF-Q5-dgC">
-                                                <connections>
-                                                    <action selector="selectColor:" destination="Klh-96-B8y" id="omJ-Nc-rrx"/>
-                                                </connections>
-                                            </barButtonItem>
-                                        </rightBarButtonItems>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="CNl-Xb-uHG" firstAttribute="leading" secondItem="PUe-Wk-z6O" secondAttribute="leading" id="AEq-BV-g6C"/>
-                            <constraint firstItem="CNl-Xb-uHG" firstAttribute="trailing" secondItem="PUe-Wk-z6O" secondAttribute="trailing" id="E1X-18-liE"/>
-                            <constraint firstItem="CNl-Xb-uHG" firstAttribute="bottom" secondItem="PUe-Wk-z6O" secondAttribute="bottom" id="EK8-1B-q1S"/>
-                            <constraint firstItem="4GT-a2-PXd" firstAttribute="top" secondItem="PUe-Wk-z6O" secondAttribute="top" id="dai-DR-JyD"/>
-                            <constraint firstItem="4GT-a2-PXd" firstAttribute="trailing" secondItem="CNl-Xb-uHG" secondAttribute="trailing" id="fZ2-e7-6ro"/>
-                            <constraint firstItem="CNl-Xb-uHG" firstAttribute="top" secondItem="4GT-a2-PXd" secondAttribute="bottom" constant="13" id="ltA-hV-0oi"/>
-                            <constraint firstItem="4GT-a2-PXd" firstAttribute="leading" secondItem="CNl-Xb-uHG" secondAttribute="leading" id="ykF-pn-6ku"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="PUe-Wk-z6O"/>
-                    </view>
-                    <connections>
-                        <outlet property="okButton" destination="RvL-PG-D81" id="Gfv-fQ-xN8"/>
-                        <outlet property="textView" destination="CNl-Xb-uHG" id="ZFK-qa-tXH"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u60-EG-R1Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137.6953125" y="847.65625"/>
-        </scene>
-        <!--Settings View Controller-->
-        <scene sceneID="1Xp-3z-AoS">
-            <objects>
-                <viewController id="sb2-4x-99H" customClass="SettingsViewController" customModule="コマ撮り" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="enB-Mk-typ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.01" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Tat-f9-s2n">
-                                <rect key="frame" x="23" y="95" width="329" height="30"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="setTimer:" destination="sb2-4x-99H" eventType="valueChanged" id="zU7-oq-K5p"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1コマあたりの時間:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMp-NE-4eS">
-                                <rect key="frame" x="112" y="34" width="151" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FD0-mB-itK">
-                                <rect key="frame" x="48" y="127" width="30" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="0.1">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="set01" destination="sb2-4x-99H" eventType="touchUpInside" id="63Q-Nk-i19"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIP-7I-r1C">
-                                <rect key="frame" x="12" y="127" width="35" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="0.05">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="set005" destination="sb2-4x-99H" eventType="touchUpInside" id="7R0-E8-Upa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVn-6i-iyo">
-                                <rect key="frame" x="335" y="127" width="30" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="10">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="set10" destination="sb2-4x-99H" eventType="touchUpInside" id="Ibv-aI-ZeE"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="（秒）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zf3-Cs-vAD">
-                                <rect key="frame" x="162" y="133" width="52" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRF-Yx-ozU">
-                                <rect key="frame" x="275" y="63" width="100" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="o8U-Yt-ZFB"/>
-                    </view>
-                    <size key="freeformSize" width="1024" height="192"/>
-                    <connections>
-                        <outlet property="currentTime" destination="XRF-Yx-ozU" id="RVc-HZ-km2"/>
-                        <outlet property="slider" destination="Tat-f9-s2n" id="aHV-Ip-eRa"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GU4-pM-S6E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="874.8046875" y="122.65625"/>
+            <point key="canvasLocation" x="138.8671875" y="122.65625"/>
         </scene>
     </scenes>
     <resources>
         <image name="camera.circle" catalog="system" width="128" height="121"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
-        <image name="photo.on.rectangle" catalog="system" width="128" height="98"/>
-        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="music.note" catalog="system" width="97" height="128"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
     </resources>
 </document>

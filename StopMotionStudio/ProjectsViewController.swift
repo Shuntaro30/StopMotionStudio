@@ -19,8 +19,6 @@ class ProjectsViewController: UICollectionViewController {
     var editingProjects = [ProjectItem]()
     
     var isEdit = false
-    
-    var selectedName = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,7 +84,6 @@ class ProjectsViewController: UICollectionViewController {
                             } else {
                                 try FileManager.default.removeItem(atPath: NSHomeDirectory() + "/Documents/\(self.editingProjects[zen - i - 1].string ?? "")")
                             }
-                            
                         } catch {
                             print("'\(self.editingProjects[zen - i - 1].string!)' を削除できませんんでした。エラー: \(error.localizedDescription)")
                             self.remove.isHidden = true
@@ -95,7 +92,6 @@ class ProjectsViewController: UICollectionViewController {
                             self.present(alert, animated: true)
                             return
                         }
-                        UserDefaults.standard.removeObject(forKey: self.editingProjects[zen - i - 1].string!)
                         if i != 0 {
                             if let index = self.objects.firstIndex(of: self.editingProjects[zen - i - 1]) {
                                 self.objects.remove(at: index)
@@ -138,7 +134,6 @@ class ProjectsViewController: UICollectionViewController {
                         self.present(alert, animated: true)
                         return
                     }
-                    UserDefaults.standard.removeObject(forKey: self.editingProjects[zen - i].string!)
                     if i != 0 {
                         if let index = self.objects.firstIndex(of: self.editingProjects[zen - i]) {
                             self.objects.remove(at: index)
@@ -182,7 +177,6 @@ class ProjectsViewController: UICollectionViewController {
                                             try self.createDir(atPath: NSHomeDirectory() + "/Documents/" + fileName)
                                             self.objects.insert(ProjectItem(image: nil, forName: fileName), at: 1)
                                             self.collectionView.insertItems(at: [IndexPath(item: 1, section: 0)])
-                                            UserDefaults.standard.set(0.1, forKey: fileName)
                                         } catch {
                                             let alert = UIAlertController(title: "プロジェクトを作成できませんでした。", message: error.localizedDescription, preferredStyle: .alert)
                                             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -197,7 +191,6 @@ class ProjectsViewController: UICollectionViewController {
                                             try self.createDir(atPath: NSHomeDirectory() + "/Documents/" + fileName)
                                             self.objects.insert(ProjectItem(image: nil, forName: fileName), at: 1)
                                             self.collectionView.insertItems(at: [IndexPath(item: 1, section: 0)])
-                                            UserDefaults.standard.set(0.1, forKey: fileName)
                                         } catch {
                                             let alert = UIAlertController(title: "プロジェクトを作成できませんでした。", message: error.localizedDescription, preferredStyle: .alert)
                                             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -283,7 +276,7 @@ class ProjectsViewController: UICollectionViewController {
         if objects[indexPath.row].string == "新規作成" {
             imageView.frame = CGRect(x: Int((view.frame.width / 4.0 - 20.0)) / 4, y: Int((view.frame.width / 4.0 - 20.0)) / 4 - 15, width: Int((view.frame.width / 4.0 - 20.0)) / 2, height: Int((view.frame.width / 4.0 - 20.0)) / 2)
         }
-        cell.backgroundColor = .darkGray
+        cell.backgroundColor = UIColor.systemGray5
         cell.layer.cornerRadius = 7.5
         cell.clearCheckmark()
         return cell
@@ -309,7 +302,6 @@ class ProjectsViewController: UICollectionViewController {
                 self.insertNewObjects(sender: nil)
             } else {
                 self.performSegue(withIdentifier: "showEditor", sender: nil)
-                self.selectedName = objects[indexPath.row].string ?? ""
             }
         }
     }
@@ -356,10 +348,15 @@ class ProjectsViewController: UICollectionViewController {
         }
     }
     
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let controller = segue.destination as? EditViewController
-        controller?.projectName = selectedName
-        controller?.navigationItem.title = selectedName
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
+    */
 
 }
