@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		210DA18E2493059F0018B878 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210DA18D2493059F0018B878 /* SettingsViewController.swift */; };
+		212097812493251500D126B2 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120977F2493251500D126B2 /* PreviewViewController.swift */; };
+		212097822493251500D126B2 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 212097802493251500D126B2 /* PreviewViewController.xib */; };
 		2180D3A82484A0FA0046E8A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2180D3A72484A0FA0046E8A7 /* AppDelegate.swift */; };
 		2180D3AA2484A0FA0046E8A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2180D3A92484A0FA0046E8A7 /* SceneDelegate.swift */; };
 		2180D3AF2484A0FA0046E8A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2180D3AD2484A0FA0046E8A7 /* Main.storyboard */; };
 		2180D3B12484A0FC0046E8A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2180D3B02484A0FC0046E8A7 /* Assets.xcassets */; };
 		2180D3B42484A0FC0046E8A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2180D3B22484A0FC0046E8A7 /* LaunchScreen.storyboard */; };
-		2180D3BF2484A0FC0046E8A7 /* StopMotionStudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2180D3BE2484A0FC0046E8A7 /* StopMotionStudioTests.swift */; };
 		2180D3D82484A43E0046E8A7 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2180D3D72484A43E0046E8A7 /* ProjectsViewController.swift */; };
+		2183E0F6248C7CE800A73536 /* CCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2183E0F5248C7CE800A73536 /* CCView.swift */; };
+		2183E0F8248C7E0D00A73536 /* CCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2183E0F7248C7E0D00A73536 /* CCCell.swift */; };
 		2192EE7D248A048500324E89 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192EE7C248A048500324E89 /* EditViewController.swift */; };
+		21B6830A249467B500B7D5AD /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B68309249467B500B7D5AD /* Path.swift */; };
+		21B6830C2494724C00B7D5AD /* TITextImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B6830B2494724C00B7D5AD /* TITextImage.swift */; };
+		21B6830E2494746F00B7D5AD /* AddTitleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B6830D2494746F00B7D5AD /* AddTitleController.swift */; };
 		21BF12D52486251D00E2A8A7 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BF12D42486251D00E2A8A7 /* Cell.swift */; };
+		7BC1993D9D510402B868AEB9 /* Pods_StopMotionStudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AEBA9FD3492BAECFD35CD9 /* Pods_StopMotionStudio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		210DA18D2493059F0018B878 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
+		2120977F2493251500D126B2 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PreviewViewController.swift; path = ../PreviewViewController.swift; sourceTree = "<group>"; };
+		212097802493251500D126B2 /* PreviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewViewController.xib; sourceTree = "<group>"; };
 		2180D3A42484A0FA0046E8A7 /* コマ撮り.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "コマ撮り.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2180D3A72484A0FA0046E8A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2180D3A92484A0FA0046E8A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,13 +47,19 @@
 		2180D3B32484A0FC0046E8A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2180D3B52484A0FC0046E8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2180D3BA2484A0FC0046E8A7 /* StopMotionStudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopMotionStudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2180D3BE2484A0FC0046E8A7 /* StopMotionStudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopMotionStudioTests.swift; sourceTree = "<group>"; };
-		2180D3C02484A0FC0046E8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2180D3D72484A43E0046E8A7 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		2183E0F5248C7CE800A73536 /* CCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCView.swift; sourceTree = "<group>"; };
+		2183E0F7248C7E0D00A73536 /* CCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCell.swift; sourceTree = "<group>"; };
 		2192EE7C248A048500324E89 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		21B68309249467B500B7D5AD /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		21B6830B2494724C00B7D5AD /* TITextImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TITextImage.swift; sourceTree = "<group>"; };
+		21B6830D2494746F00B7D5AD /* AddTitleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTitleController.swift; sourceTree = "<group>"; };
 		21BF12D124860F8E00E2A8A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21BF12D42486251D00E2A8A7 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		21D047CC24889E9600286B01 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		7976F3864CB626E54BED2D6E /* Pods-StopMotionStudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopMotionStudio.release.xcconfig"; path = "Target Support Files/Pods-StopMotionStudio/Pods-StopMotionStudio.release.xcconfig"; sourceTree = "<group>"; };
+		AAFBF28773D3ACAC290312C0 /* Pods-StopMotionStudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopMotionStudio.debug.xcconfig"; path = "Target Support Files/Pods-StopMotionStudio/Pods-StopMotionStudio.debug.xcconfig"; sourceTree = "<group>"; };
+		F5AEBA9FD3492BAECFD35CD9 /* Pods_StopMotionStudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StopMotionStudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC1993D9D510402B868AEB9 /* Pods_StopMotionStudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,9 +84,12 @@
 		2180D39B2484A0FA0046E8A7 = {
 			isa = PBXGroup;
 			children = (
+				2183E0F5248C7CE800A73536 /* CCView.swift */,
+				2183E0F7248C7E0D00A73536 /* CCCell.swift */,
 				2180D3A62484A0FA0046E8A7 /* StopMotionStudio */,
-				2180D3BD2484A0FC0046E8A7 /* StopMotionStudioTests */,
 				2180D3A52484A0FA0046E8A7 /* Products */,
+				444C7617F382ECAD94926751 /* Pods */,
+				3D27C15FBDE48B570A786C99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,8 +108,14 @@
 				2180D3A72484A0FA0046E8A7 /* AppDelegate.swift */,
 				2180D3A92484A0FA0046E8A7 /* SceneDelegate.swift */,
 				2192EE7C248A048500324E89 /* EditViewController.swift */,
+				21B6830B2494724C00B7D5AD /* TITextImage.swift */,
+				210DA18D2493059F0018B878 /* SettingsViewController.swift */,
 				2180D3D72484A43E0046E8A7 /* ProjectsViewController.swift */,
+				21B6830D2494746F00B7D5AD /* AddTitleController.swift */,
 				21BF12D42486251D00E2A8A7 /* Cell.swift */,
+				21B68309249467B500B7D5AD /* Path.swift */,
+				2120977F2493251500D126B2 /* PreviewViewController.swift */,
+				212097802493251500D126B2 /* PreviewViewController.xib */,
 				2180D3AD2484A0FA0046E8A7 /* Main.storyboard */,
 				2180D3B02484A0FC0046E8A7 /* Assets.xcassets */,
 				2180D3B22484A0FC0046E8A7 /* LaunchScreen.storyboard */,
@@ -97,13 +124,22 @@
 			path = StopMotionStudio;
 			sourceTree = "<group>";
 		};
-		2180D3BD2484A0FC0046E8A7 /* StopMotionStudioTests */ = {
+		3D27C15FBDE48B570A786C99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2180D3BE2484A0FC0046E8A7 /* StopMotionStudioTests.swift */,
-				2180D3C02484A0FC0046E8A7 /* Info.plist */,
+				F5AEBA9FD3492BAECFD35CD9 /* Pods_StopMotionStudio.framework */,
 			);
-			path = StopMotionStudioTests;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		444C7617F382ECAD94926751 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAFBF28773D3ACAC290312C0 /* Pods-StopMotionStudio.debug.xcconfig */,
+				7976F3864CB626E54BED2D6E /* Pods-StopMotionStudio.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2180D3CE2484A0FC0046E8A7 /* Build configuration list for PBXNativeTarget "StopMotionStudio" */;
 			buildPhases = (
+				E748757D9827D3D5066EF224 /* [CP] Check Pods Manifest.lock */,
 				2180D3A02484A0FA0046E8A7 /* Sources */,
 				2180D3A12484A0FA0046E8A7 /* Frameworks */,
 				2180D3A22484A0FA0046E8A7 /* Resources */,
+				128FFB87B3A07C2EEE809F00 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +229,7 @@
 				2180D3B42484A0FC0046E8A7 /* LaunchScreen.storyboard in Resources */,
 				2180D3B12484A0FC0046E8A7 /* Assets.xcassets in Resources */,
 				2180D3AF2484A0FA0046E8A7 /* Main.storyboard in Resources */,
+				212097822493251500D126B2 /* PreviewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +242,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		128FFB87B3A07C2EEE809F00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StopMotionStudio/Pods-StopMotionStudio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StopMotionStudio/Pods-StopMotionStudio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StopMotionStudio/Pods-StopMotionStudio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E748757D9827D3D5066EF224 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StopMotionStudio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2180D3A02484A0FA0046E8A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -210,9 +291,16 @@
 			files = (
 				2192EE7D248A048500324E89 /* EditViewController.swift in Sources */,
 				21BF12D52486251D00E2A8A7 /* Cell.swift in Sources */,
+				21B6830E2494746F00B7D5AD /* AddTitleController.swift in Sources */,
+				2183E0F6248C7CE800A73536 /* CCView.swift in Sources */,
+				21B6830C2494724C00B7D5AD /* TITextImage.swift in Sources */,
 				2180D3D82484A43E0046E8A7 /* ProjectsViewController.swift in Sources */,
 				2180D3A82484A0FA0046E8A7 /* AppDelegate.swift in Sources */,
 				2180D3AA2484A0FA0046E8A7 /* SceneDelegate.swift in Sources */,
+				2183E0F8248C7E0D00A73536 /* CCCell.swift in Sources */,
+				210DA18E2493059F0018B878 /* SettingsViewController.swift in Sources */,
+				21B6830A249467B500B7D5AD /* Path.swift in Sources */,
+				212097812493251500D126B2 /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +308,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2180D3BF2484A0FC0046E8A7 /* StopMotionStudioTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,8 +460,10 @@
 		};
 		2180D3CF2484A0FC0046E8A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAFBF28773D3ACAC290312C0 /* Pods-StopMotionStudio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "StopMotionStudio/コマ撮り.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FW8567YA4Q;
 				INFOPLIST_FILE = StopMotionStudio/Info.plist;
@@ -385,6 +474,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shuntar.StopMotionStudio;
 				PRODUCT_NAME = "コマ撮り";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -392,8 +482,10 @@
 		};
 		2180D3D02484A0FC0046E8A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7976F3864CB626E54BED2D6E /* Pods-StopMotionStudio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "StopMotionStudio/コマ撮り.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FW8567YA4Q;
 				INFOPLIST_FILE = StopMotionStudio/Info.plist;
@@ -404,6 +496,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shuntar.StopMotionStudio;
 				PRODUCT_NAME = "コマ撮り";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
