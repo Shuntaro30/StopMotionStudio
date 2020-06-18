@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,16 +23,44 @@
 		21B6830C2494724C00B7D5AD /* TITextImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B6830B2494724C00B7D5AD /* TITextImage.swift */; };
 		21B6830E2494746F00B7D5AD /* AddTitleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B6830D2494746F00B7D5AD /* AddTitleController.swift */; };
 		21BF12D52486251D00E2A8A7 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BF12D42486251D00E2A8A7 /* Cell.swift */; };
-		7BC1993D9D510402B868AEB9 /* Pods_StopMotionStudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AEBA9FD3492BAECFD35CD9 /* Pods_StopMotionStudio.framework */; };
+		72A5A1A7AB91CC0DFA93EE3F /* Pods_StopMotionStudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AEBA9FD3492BAECFD35CD9 /* Pods_StopMotionStudio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2180D3BB2484A0FC0046E8A7 /* PBXContainerItemProxy */ = {
+		218816202499FD630080661A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2180D39C2484A0FA0046E8A7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2180D3A32484A0FA0046E8A7;
-			remoteInfo = StopMotionStudio;
+			containerPortal = 2128AA3F2495A97600230207 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B1D0265C05B7BD94BA4DB5BF70915544;
+			remoteInfo = Sketch;
+		};
+		21FE765A2495AD690038B7AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2128AA3F2495A97600230207 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 74E920B452C5D54B25B1D78B516F3C7E;
+			remoteInfo = AMColorPicker;
+		};
+		21FE765C2495AD690038B7AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2128AA3F2495A97600230207 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 957ECD4B307A1BA2D88D1216D4ADE9BE;
+			remoteInfo = "Pods-StopMotionStudio";
+		};
+		21FE765E2495AD690038B7AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2128AA3F2495A97600230207 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 20D73B80DBEDC9935666EB05B502A6E8;
+			remoteInfo = QBImagePickerController;
+		};
+		21FE76602495AD690038B7AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2128AA3F2495A97600230207 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C9708630F9D9C8C32EF0B3C91B9E469D;
+			remoteInfo = "QBImagePickerController-QBImagePicker";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,13 +68,13 @@
 		210DA18D2493059F0018B878 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		2120977F2493251500D126B2 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PreviewViewController.swift; path = ../PreviewViewController.swift; sourceTree = "<group>"; };
 		212097802493251500D126B2 /* PreviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewViewController.xib; sourceTree = "<group>"; };
+		2128AA3F2495A97600230207 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		2180D3A42484A0FA0046E8A7 /* コマ撮り.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "コマ撮り.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2180D3A72484A0FA0046E8A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2180D3A92484A0FA0046E8A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2180D3B02484A0FC0046E8A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2180D3B32484A0FC0046E8A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2180D3B52484A0FC0046E8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2180D3BA2484A0FC0046E8A7 /* StopMotionStudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopMotionStudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2180D3D72484A43E0046E8A7 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
 		2183E0F5248C7CE800A73536 /* CCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCView.swift; sourceTree = "<group>"; };
 		2183E0F7248C7E0D00A73536 /* CCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCell.swift; sourceTree = "<group>"; };
@@ -57,6 +85,7 @@
 		21BF12D124860F8E00E2A8A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21BF12D42486251D00E2A8A7 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		21D047CC24889E9600286B01 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		3DFDFA25060CD567D46120BD /* libPods-StopMotionStudio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StopMotionStudio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7976F3864CB626E54BED2D6E /* Pods-StopMotionStudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopMotionStudio.release.xcconfig"; path = "Target Support Files/Pods-StopMotionStudio/Pods-StopMotionStudio.release.xcconfig"; sourceTree = "<group>"; };
 		AAFBF28773D3ACAC290312C0 /* Pods-StopMotionStudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopMotionStudio.debug.xcconfig"; path = "Target Support Files/Pods-StopMotionStudio/Pods-StopMotionStudio.debug.xcconfig"; sourceTree = "<group>"; };
 		F5AEBA9FD3492BAECFD35CD9 /* Pods_StopMotionStudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StopMotionStudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,20 +96,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BC1993D9D510402B868AEB9 /* Pods_StopMotionStudio.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2180D3B72484A0FC0046E8A7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				72A5A1A7AB91CC0DFA93EE3F /* Pods_StopMotionStudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2128AA402495A97600230207 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21FE765B2495AD690038B7AB /* AMColorPicker.framework */,
+				21FE765D2495AD690038B7AB /* Pods_StopMotionStudio.framework */,
+				21FE765F2495AD690038B7AB /* QBImagePickerController.framework */,
+				21FE76612495AD690038B7AB /* QBImagePicker.bundle */,
+				218816212499FD630080661A /* Sketch.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2180D39B2484A0FA0046E8A7 = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				2180D3A42484A0FA0046E8A7 /* コマ撮り.app */,
-				2180D3BA2484A0FC0046E8A7 /* StopMotionStudioTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,7 +160,9 @@
 		3D27C15FBDE48B570A786C99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2128AA3F2495A97600230207 /* Pods.xcodeproj */,
 				F5AEBA9FD3492BAECFD35CD9 /* Pods_StopMotionStudio.framework */,
+				3DFDFA25060CD567D46120BD /* libPods-StopMotionStudio.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,49 +173,30 @@
 				AAFBF28773D3ACAC290312C0 /* Pods-StopMotionStudio.debug.xcconfig */,
 				7976F3864CB626E54BED2D6E /* Pods-StopMotionStudio.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2180D3A32484A0FA0046E8A7 /* StopMotionStudio */ = {
+		2180D3A32484A0FA0046E8A7 /* コマ撮りスタジオ */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2180D3CE2484A0FC0046E8A7 /* Build configuration list for PBXNativeTarget "StopMotionStudio" */;
+			buildConfigurationList = 2180D3CE2484A0FC0046E8A7 /* Build configuration list for PBXNativeTarget "コマ撮りスタジオ" */;
 			buildPhases = (
-				E748757D9827D3D5066EF224 /* [CP] Check Pods Manifest.lock */,
+				2E2C6D8E731569336BBDA1A7 /* [CP] Check Pods Manifest.lock */,
 				2180D3A02484A0FA0046E8A7 /* Sources */,
 				2180D3A12484A0FA0046E8A7 /* Frameworks */,
 				2180D3A22484A0FA0046E8A7 /* Resources */,
-				128FFB87B3A07C2EEE809F00 /* [CP] Embed Pods Frameworks */,
+				5E2098476497EA88528FE935 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = StopMotionStudio;
+			name = "コマ撮りスタジオ";
 			productName = StopMotionStudio;
 			productReference = 2180D3A42484A0FA0046E8A7 /* コマ撮り.app */;
 			productType = "com.apple.product-type.application";
-		};
-		2180D3B92484A0FC0046E8A7 /* StopMotionStudioTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2180D3D12484A0FC0046E8A7 /* Build configuration list for PBXNativeTarget "StopMotionStudioTests" */;
-			buildPhases = (
-				2180D3B62484A0FC0046E8A7 /* Sources */,
-				2180D3B72484A0FC0046E8A7 /* Frameworks */,
-				2180D3B82484A0FC0046E8A7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2180D3BC2484A0FC0046E8A7 /* PBXTargetDependency */,
-			);
-			name = StopMotionStudioTests;
-			productName = StopMotionStudioTests;
-			productReference = 2180D3BA2484A0FC0046E8A7 /* StopMotionStudioTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -194,10 +210,6 @@
 				TargetAttributes = {
 					2180D3A32484A0FA0046E8A7 = {
 						CreatedOnToolsVersion = 11.4;
-					};
-					2180D3B92484A0FC0046E8A7 = {
-						CreatedOnToolsVersion = 11.4;
-						TestTargetID = 2180D3A32484A0FA0046E8A7;
 					};
 				};
 			};
@@ -213,13 +225,56 @@
 			mainGroup = 2180D39B2484A0FA0046E8A7;
 			productRefGroup = 2180D3A52484A0FA0046E8A7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2128AA402495A97600230207 /* Products */;
+					ProjectRef = 2128AA3F2495A97600230207 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				2180D3A32484A0FA0046E8A7 /* StopMotionStudio */,
-				2180D3B92484A0FC0046E8A7 /* StopMotionStudioTests */,
+				2180D3A32484A0FA0046E8A7 /* コマ撮りスタジオ */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		218816212499FD630080661A /* Sketch.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Sketch.framework;
+			remoteRef = 218816202499FD630080661A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		21FE765B2495AD690038B7AB /* AMColorPicker.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AMColorPicker.framework;
+			remoteRef = 21FE765A2495AD690038B7AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		21FE765D2495AD690038B7AB /* Pods_StopMotionStudio.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_StopMotionStudio.framework;
+			remoteRef = 21FE765C2495AD690038B7AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		21FE765F2495AD690038B7AB /* QBImagePickerController.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = QBImagePickerController.framework;
+			remoteRef = 21FE765E2495AD690038B7AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		21FE76612495AD690038B7AB /* QBImagePicker.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = QBImagePicker.bundle;
+			remoteRef = 21FE76602495AD690038B7AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2180D3A22484A0FA0046E8A7 /* Resources */ = {
@@ -233,34 +288,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2180D3B82484A0FC0046E8A7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		128FFB87B3A07C2EEE809F00 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StopMotionStudio/Pods-StopMotionStudio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StopMotionStudio/Pods-StopMotionStudio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StopMotionStudio/Pods-StopMotionStudio-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E748757D9827D3D5066EF224 /* [CP] Check Pods Manifest.lock */ = {
+		2E2C6D8E731569336BBDA1A7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,6 +311,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E2098476497EA88528FE935 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StopMotionStudio/Pods-StopMotionStudio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StopMotionStudio/Pods-StopMotionStudio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StopMotionStudio/Pods-StopMotionStudio-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -304,22 +352,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2180D3B62484A0FC0046E8A7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2180D3BC2484A0FC0046E8A7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2180D3A32484A0FA0046E8A7 /* StopMotionStudio */;
-			targetProxy = 2180D3BB2484A0FC0046E8A7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2180D3AD2484A0FA0046E8A7 /* Main.storyboard */ = {
@@ -472,6 +505,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.8;
 				PRODUCT_BUNDLE_IDENTIFIER = shuntar.StopMotionStudio;
 				PRODUCT_NAME = "コマ撮り";
 				SUPPORTS_MACCATALYST = NO;
@@ -494,55 +528,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.8;
 				PRODUCT_BUNDLE_IDENTIFIER = shuntar.StopMotionStudio;
 				PRODUCT_NAME = "コマ撮り";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
-			};
-			name = Release;
-		};
-		2180D3D22484A0FC0046E8A7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FW8567YA4Q;
-				INFOPLIST_FILE = StopMotionStudioTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = shuntar.StopMotionStudioTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StopMotionStudio.app/StopMotionStudio";
-			};
-			name = Debug;
-		};
-		2180D3D32484A0FC0046E8A7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FW8567YA4Q;
-				INFOPLIST_FILE = StopMotionStudioTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = shuntar.StopMotionStudioTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StopMotionStudio.app/StopMotionStudio";
 			};
 			name = Release;
 		};
@@ -558,20 +549,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2180D3CE2484A0FC0046E8A7 /* Build configuration list for PBXNativeTarget "StopMotionStudio" */ = {
+		2180D3CE2484A0FC0046E8A7 /* Build configuration list for PBXNativeTarget "コマ撮りスタジオ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2180D3CF2484A0FC0046E8A7 /* Debug */,
 				2180D3D02484A0FC0046E8A7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2180D3D12484A0FC0046E8A7 /* Build configuration list for PBXNativeTarget "StopMotionStudioTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2180D3D22484A0FC0046E8A7 /* Debug */,
-				2180D3D32484A0FC0046E8A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

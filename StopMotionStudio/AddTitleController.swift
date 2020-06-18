@@ -9,7 +9,7 @@
 import UIKit
 import AMColorPicker
 
-class AddTitleController: UIViewController, AMColorPickerDelegate {
+class AddTitleController: UIViewController {
     
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var okButton: UIBarButtonItem!
@@ -28,7 +28,7 @@ class AddTitleController: UIViewController, AMColorPickerDelegate {
     
     @IBAction func add(_ sender: Any) {
         let textMaker = TITextImage()
-        let textImage = textMaker.addText(toImage: image!, string: textView.text ?? "", textColor: colorPickerViewController.selectedColor)
+        let textImage = textMaker.addText(image!, color: colorPickerViewController.selectedColor, text: "")
         let controller = self.preVC
         controller?.images.remove(at: self.index)
         controller?.images.insert(textImage, at: self.index)
@@ -39,7 +39,6 @@ class AddTitleController: UIViewController, AMColorPickerDelegate {
     
     @IBAction func selectColor(_ sender: Any) {
         colorPickerViewController.selectedColor = .red
-        colorPickerViewController.delegate = self
         colorPickerViewController.popoverPresentationController?.sourceView = okButton.customView
         colorPickerViewController.popoverPresentationController?.sourceRect = okButton.customView?.bounds as! CGRect
         present(colorPickerViewController, animated: true, completion: nil)
@@ -47,10 +46,6 @@ class AddTitleController: UIViewController, AMColorPickerDelegate {
     
     @IBAction func dismissSelf(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
-    }
-    
-    func colorPicker(_ colorPicker: AMColorPicker, didSelect color: UIColor) {
-        
     }
     
     /*

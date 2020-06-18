@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+final class SettingsViewController: UIViewController {
     
     @IBOutlet weak var currentTime: UILabel!
     @IBOutlet weak var slider: UISlider!

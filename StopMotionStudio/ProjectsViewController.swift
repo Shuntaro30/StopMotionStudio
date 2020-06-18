@@ -8,7 +8,7 @@
 
 import UIKit
 
-@available(iOS 13.0, *)
+/// thi class is ```UIViewController```.
 class ProjectsViewController: UICollectionViewController {
     
     @IBOutlet weak var removeButton: UIBarButtonItem!
@@ -54,8 +54,9 @@ class ProjectsViewController: UICollectionViewController {
         self.objects.insert(ProjectItem(image: UIImage(systemName: "plus"), forName: "新規作成"), at: 0)
         
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: view.frame.width / 4 - 20, height: view.frame.width / 4 - 20)
-        layout.sectionInset = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
+        let cellSize = self.view.frame.size.width / 5 - 30
+        layout.sectionInset = UIEdgeInsets(top: 30, left: 30, bottom: 30, right: 30)
+        layout.itemSize = CGSize(width: cellSize, height: cellSize)
         collectionView.collectionViewLayout = layout
     }
     
@@ -259,7 +260,7 @@ class ProjectsViewController: UICollectionViewController {
             navigationItem.leftBarButtonItem?.style = .plain
             self.editingProjects.removeAll()
             self.objects.insert(ProjectItem(image: UIImage(systemName: "plus"), forName: "新規作成"), at: 0)
-            self.collectionView.insertItems(at: [IndexPath(item: 0, section: 0)])
+            self.collectionView.reloadData()
             self.collectionView.allowsSelection = true
             self.collectionView.allowsMultipleSelection = true
             let indexPaths = self.collectionView.indexPathsForSelectedItems!
@@ -281,7 +282,11 @@ class ProjectsViewController: UICollectionViewController {
         let imageView = cell.viewWithTag(2) as! UIImageView; imageView.image = objects[indexPath.row].image
         imageView.tintColor = UIColor.white
         if objects[indexPath.row].string == "新規作成" {
-            imageView.frame = CGRect(x: Int((view.frame.width / 4.0 - 20.0)) / 4, y: Int((view.frame.width / 4.0 - 20.0)) / 4 - 15, width: Int((view.frame.width / 4.0 - 20.0)) / 2, height: Int((view.frame.width / 4.0 - 20.0)) / 2)
+            /// this is ```collectionView.collectionViewLayout```.
+            let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+            /// collectionView item Size width.
+            let number = layout.itemSize.width
+            imageView.frame = CGRect(x: number / 2 - 50, y: number / 2 - 65, width: 150.0, height: 150.0)
         }
         cell.backgroundColor = .darkGray
         cell.layer.cornerRadius = 7.5
